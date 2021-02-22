@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
 }
 html,
 body {
@@ -7,24 +6,30 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: black;
 }
-#app {
-  height: 100%;
+.typo {
+  padding-top: 0.4%;
+  text-transform: uppercase;
 }
+
 svg {
-  height: 100%;
-  width: 100%;
-  min-width: 960px;
+  margin-top: 40px;
+  height: 460px;
+  width: 350px;
+  min-width: 860px;
   min-height: 500px;
   font-family: sans-serif;
   font-size: 10;
   text-anchor: middle;
+  align-items: center;
 }
 .node--internal circle {
   fill: #555;
 }
 .node--internal text {
-  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 rgb(157, 24, 24),
+    -1px 0 0 rgb(79, 16, 16);
 }
 .link {
   fill: none;
